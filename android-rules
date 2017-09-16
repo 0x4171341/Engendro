@@ -1,0 +1,31 @@
+  GNU nano 2.7.3                            Fichero: /etc/udev/rules.d/51-android.rules                                        
+
+#
+ADB your devices
+#Sansung chino s3
+SUBSYSTEM=="usb", ATTR{idVendor}=="1782", ATTR{Product}=="5d03", MODE="0666" GROUP="androididdev""
+
+#Huawei y300-0151
+SUBSYSTEM=="usb", ATTR{idVendor}=="05c6", ATTR{Product}=="9008", MODE="0666" GROUP="androididdev""
+
+#Xperia P
+SUBSYSTEMS=="usb", ATTR{idVendor}=="0fce", ATTR{Product}=="0dde", MODE="0666" GROUP="androiddev", SYMLINK+="android%n"
+
+# MyDeviceName
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="4e22", ATTRS{idProduct}=="18d1", MODE="0666" GROUP="androiddev", SYMLINK+="android%n"
+
+#SUBSYSTEM=="usb", ATTR{idVendor}=="04e8", ATTR{idProduct}=="6860", MODE="0666"
+
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="18d1", ATTRS{idProduct}=="4e22", MODE="0666" GROUP="androiddev", SYMLINK+="android%n"
+
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="04e8", ATTRS{idProduct}=="6860", MODE="0666" GROUP="androiddev", SYMLINK+="android%n"
+
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0e8d", ATTRS{idProduct}=="0003", MODE="0666" GROUP="androiddev", SYMLINK+="android%n"
+
+#lenovo
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0bb4",ATTRS{idProduct}=="0c01", MODE="0666" GROUP="androiddev", SYMLINK+="android%n"
+
+#huawei
+SUBSYSTEM=="usb", ATTRS{idVendor}=="12d1",ATTRS{idProduct}=="1035", MODE="0666" GROUP="androiddev", SYMLINK+="android%n"
+
+#u8950D
