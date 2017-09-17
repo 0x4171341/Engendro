@@ -1,5 +1,6 @@
 #!/bin/bash
-
+#Este codigo nos regala un imei segun el algoritmo luhn
+#esperamos continuar su desarrollo, y lograr que lo implemente segun sea el modelo y arquitectura
 #Comprobando si los parametros estan correctos en el script
 if [[ $# -ne 1 ]];then
   echo "usage: cambio_de_imei [imei|'rand']"
