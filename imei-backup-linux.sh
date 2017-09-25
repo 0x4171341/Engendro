@@ -1,6 +1,4 @@
 chmod +x files/adb-linux
-
-
 # CHECK IF IMEI BACKUP ALREADY EXISTS
 
 sudo files/adb-linux pull /sdcard/IMEI-BACKUP/5.img check-backup
